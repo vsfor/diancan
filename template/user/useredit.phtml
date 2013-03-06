@@ -1,0 +1,17 @@
+{include file="html/header"} 
+<span class="tip-msg">如需修改其他信息，请联系管理员~！</span>
+<div class="add-user"><?php //print_r($temp_userinfo);
+//防止恶意替换信息，暂只提供 密码及QQ资料修改
+ ?>
+<form action="<?php echo module('cms')->getUrl('user/_useredit'); ?>" method="post">
+	<input type="hidden" name="userid" value="<?php echo $temp_userinfo['id']; ?>" /> 
+	<div><label>密码：</label><input type="password" name="password" value="<?php echo $temp_userinfo['password']; ?>" /></div>
+	<div><label>QQ：</label><input type="text" name="userqq" value="<?php echo $temp_userinfo['qq']; ?>"  />   </div>
+	<div class="sub-action">
+	<input type="reset" value="重置" />
+	<input type="submit" value="提交" />
+	</div>
+</form>
+</div>
+
+{include file="html/footer"}

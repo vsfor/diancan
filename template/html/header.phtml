@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<link rel="stylesheet" type="text/css" href="<?php echo module('cms')->getAbsUrl('template/skin/styles.css'); ?>" />
+</head>
+<body>
+<div class="main-content page-<?php echo $_GET['_action'];?>">
+<?php
+if(isset($_SESSION['me_userinfo'])):
+	$_userinfo = $_SESSION['me_userinfo']; 
+	if($_userinfo['logincounts'] == NULL) $_userinfo['logincounts'] = 1; 
+	if($_userinfo['lasttime'] == NULL) $_userinfo['lasttime'] = time(); 
+	if($_userinfo['ip'] == NULL) $_userinfo['ip'] = '0'; 
+	//print_r($_SESSION);
+	//echo "<hr>".$_GET['_action']."<hr>";
+	$_usermoney = module('diancan')->getUserMoney($_userinfo['id']); //实时余额
+?>
+<div class="welcome">
+	欢迎，<?php echo $_userinfo['name'];?>  &nbsp;&nbsp;&nbsp;
+	<span class="now-money">当前余额：<?php print_r($_usermoney); ?>
+		<?php if($_usermoney < 10): ?>
+			<span class="tip-msg">&nbsp;&nbsp; :( 您的余额已不足10元，请及时充值~！</span>
+		<?php endif;?>
+	</span>
+</div>
+<div class="self-info">
+	<span>这是你第<?php echo $_userinfo['logincounts'];?>次登录 :) </span>&nbsp;&nbsp;
+	<?php if($_userinfo['logincounts'] != 1): ?>
+	<span>上次登录ip:<?php echo $_userinfo['ip'];?></span>&nbsp;&nbsp;
+	<span>上次登录时间:<?php echo date('Y-m-d H:i:s',$_userinfo['lasttime']);?></span>&nbsp;&nbsp;
+	<span>上次余额：<?php echo $_userinfo['money'];?></span>
+	<?php endif; ?>
+</div>
+	<div class="top-links">
+		<a href="<?php echo module('cms')->getUrl('index/nowmenu'); ?>">今日菜单</a>
+		<a href="<?php echo module('cms')->getUrl('index/otherorders'); ?>">看看别人吃什么</a>
+		<a href="<?php echo module('cms')->getUrl('index/myorders'); ?>">我的订单</a>
+		<?php if($_userinfo['level'] == 9): //添加管理相关链接 ?>
+		<a>|</a>
+		<a href="<?php echo module('cms')->getUrl('index/useradmin'); ?>">用户管理</a>
+		<a href="<?php echo module('cms')->getUrl('index/menuadmin'); ?>">菜单管理</a>
+		<a href="<?php echo module('cms')->getUrl('index/orderadmin'); ?>">订单管理</a>
+		<?php endif;?>
+		<a>|</a>
+		<a href="<?php echo module('cms')->getUrl('user/useredit'); ?>">编辑个人信息</a> 
+		<a href="<?php echo module('cms')->getUrl('index/logout'); ?>">退出登录</a> 
+	</div>
+<?php endif; ?>

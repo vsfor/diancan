@@ -1,0 +1,32 @@
+2012-07-09 09:59:53 | 192.168.1.64 | /diancan/index.php |restset操作方法在index模块中不存在
+2012-07-09 10:21:33 | 192.168.1.64 | /diancan/index.php |restset操作方法在admin模块中不存在
+2012-07-09 10:25:22 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: update restaurant set level = 0; update restaurant set level=7 where id in (2,3)<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update restaurant set level=7 where id in (2,3)' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-09 10:26:33 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: update restaurant set level=0, update restaurant set level=7 where id in (2,3)<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update restaurant set level=7 where id in (2,3)' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-09 10:26:54 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: update restaurant set level=0, update restaurant set level=7 where id in (2,3);<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update restaurant set level=7 where id in (2,3)' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-09 10:27:31 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: update restaurant set level=0, update restaurant set level=7 where id in (2,3);<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update restaurant set level=7 where id in (2,3)' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-09 10:29:17 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: update restaurant set `level`=`0`; update restaurant set `level`=`7` where id in (2,3);<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update restaurant set `level`=`7` where id in (2,3)' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-09 10:31:44 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: update restaurant set `level`=`0`<br>
+					<b>错误详情</b>: Unknown column '0' in 'field list'<br>
+					<b>错误代码</b>:1054<br>
+2012-07-09 10:48:10 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select money from restaurant where `level`=7<br>
+					<b>错误详情</b>: Unknown column 'money' in 'field list'<br>
+					<b>错误代码</b>:1054<br>
+2012-07-09 11:23:27 | 192.168.1.64 | /diancan/index.php |orderadmin操作方法在index模块中不存在
+2012-07-09 14:50:57 | 192.168.1.64 | /diancan/index.php |menuadd操作方法在index模块中不存在

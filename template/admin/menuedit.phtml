@@ -1,0 +1,30 @@
+{include file="html/header"}
+<div class="comm-actions">
+	<a href="<?php echo module('cms')->getUrl('index/restadd'); ?>">添加餐厅</a>
+	<a href="<?php echo module('cms')->getUrl('index/restset'); ?>">指定今日餐厅</a>
+	<a href="<?php echo module('cms')->getUrl('index/menuadd'); ?>">添加菜单</a>
+</div> 
+<div class="add-user"><?php //print_r($temp_menuinfo); ?>
+<form action="<?php echo module('cms')->getUrl('admin/_menuedit'); ?>" method="post"> 
+	<input type="hidden" name="menuid" value="<?php echo $temp_menuinfo['id']; ?>" />
+	<div><label>套餐名称：</label><input type="text" name="menuname" value="<?php echo $temp_menuinfo['name']; ?>" />  </div>
+	<div><label>价格：</label><input type="text" name="menuprice" value="<?php echo $temp_menuinfo['price']; ?>" />   </div>
+	<div><label>状态：</label><select type="text" name="menulock">  
+	<?php if($temp_menuinfo['lock'] == 0): ?>
+		<option value="0" selected><span>正常</span></option>
+		<option value="1"><span>锁定</span></option>
+	<?php else: ?>
+		<option value="0"><span>正常</span></option>
+		<option value="1" selected><span>锁定</span></option>
+	<?php endif;?>
+	</select>  <br /> </div>
+	<div class="sub-action">
+	<input type="reset" value="重置" />
+	<input type="submit" value="提交" />
+	</div>
+</form>
+<a class="goback" href="<?php echo $history_restview; ?>">返回餐厅菜单列表</a> 
+<a class="goback" href="<?php echo module('cms')->getUrl('index/menuadmin'); ?>">返回菜单管理</a>
+</div>
+
+{include file="html/footer"}

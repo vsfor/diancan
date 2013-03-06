@@ -1,0 +1,14 @@
+{include file="html/header"}
+<div class="">
+	<div class="title">今日菜单</div>
+	<div class="content">
+		<div class="rests"><?php echo module('diancan')->getNowRests();?></div>
+		<br class="clearboth" />
+		<?php  if(isset($_GET['m_rid'])): ?>
+		<div class="menus"><?php echo module('diancan')->getRestMenu(in($_GET['m_rid']),in($_GET['m_rname']));?></div>
+		<?php else:?>
+		<div class="menus">请选择餐厅~</div>
+		<?php endif;?>
+	</div>
+</div>
+{include file="html/footer"}

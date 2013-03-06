@@ -1,0 +1,26 @@
+{include file="html/header"} 
+<div class="login-form">
+	<div class="title"><span>欢迎登录点餐系统~~~</span></div>
+	<form method="post" action="<?php module('cms')->getUrl('login'); ?>">
+		<?php if(isset($_COOKIE['diancan'])):	$_dc = $_COOKIE['diancan']; ?>
+			<div><label>用户名：</label><input type="text" name="username" value="<?php echo $_dc['username']?>" /> </div>
+			<div><label>密码：</label><input type="password" name="password" value="<?php echo $_dc['password']?>"  /> </div>
+			<div class="actions">
+				<span><input type="checkbox" name="remember" value='1' checked />记住我</span>
+				<span class="button"><input type="reset" value="重置" /></span>
+				<span class="button"><input type="submit" value="登录" /></span> <br class="clearboth" />
+			</div>
+		<?php else: ?>
+			<div><label>用户名：</label><input type="text" name="username"  /> </div>
+			<div><label>密码：</label><input type="password" name="password" /> </div>
+			<div class="actions">
+				<span><input type="checkbox" name="remember" value='1' />记住我</span>
+				<span class="button"><input type="reset" value="重置" /></span>
+				<span class="button"><input type="submit" value="登录" /></span>
+				<a href="<?php echo module('cms')->getUrl('index/register');?>">注册</a>
+				<br class="clearboth" />
+			</div>
+		<?php endif;  unset($_dc); ?>
+	</form>
+</div>
+{include file="html/footer"}

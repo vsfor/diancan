@@ -1,0 +1,24 @@
+{include file="html/header"}
+<div class="comm-actions">
+	<a href="<?php echo module('cms')->getUrl('index/restadd'); ?>">添加餐厅</a>
+	<a href="<?php echo module('cms')->getUrl('index/restset'); ?>">指定今日餐厅</a>
+	<a href="<?php echo module('cms')->getUrl('index/menuadd'); ?>">添加菜单</a>
+</div> 
+<div class="add-user">
+<form action="<?php echo module('cms')->getUrl('admin/restadd'); ?>" method="post">
+	<div><label>餐厅名称：</label><input type="text" name="restname" />  </div>
+	<div><label>电话：</label><input type="text" name="restphone" />   </div>
+	<div><label>地址：</label><input type="text" name="restaddr" />   </div> 
+	<div><label>状态：</label><select type="text" name="restlock">  
+		<option value="0" selected><span>正常</span></option>
+		<option value="1"><span>锁定</span></option>
+	</select>  <br /> </div> 
+	<div class="sub-action">
+	<input type="reset" value="重置" />
+	<input type="submit" value="添加" />
+	</div>
+</form>
+<a class="goback" href="<?php echo module('cms')->getUrl('index/menuadmin'); ?>">返回菜单管理</a>
+</div>
+
+{include file="html/footer"}

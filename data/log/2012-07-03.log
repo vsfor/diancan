@@ -1,0 +1,17 @@
+2012-07-03 10:37:50 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: SELECT count(*) FROM article <br>
+					<b>错误详情</b>: Table 'diancan.article' doesn't exist<br>
+					<b>错误代码</b>:1146<br>
+2012-07-03 10:38:04 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select id,title,status,hits,top,recommend from user order by id desc LIMIT 0,10<br>
+					<b>错误详情</b>: Unknown column 'title' in 'field list'<br>
+					<b>错误代码</b>:1054<br>
+2012-07-03 11:21:28 | 192.168.1.64 | /diancan/index.php |useradmin操作方法在admin模块中不存在
+2012-07-03 11:21:39 | 192.168.1.64 | /diancan/index.php |useradmin操作方法在admin模块中不存在
+2012-07-03 11:21:41 | 192.168.1.64 | /diancan/index.php |index/useradmin操作方法在admin模块中不存在
+2012-07-03 17:30:12 | 192.168.1.64 | /diancan/index.php |date() expects parameter 2 to be long, string given
+2012-07-03 17:30:26 | 192.168.1.64 | /diancan/index.php |date() expects parameter 2 to be long, string given
+2012-07-03 17:58:46 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: INSERT INTO user $data<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$data' at line 1<br>
+					<b>错误代码</b>:1064<br>

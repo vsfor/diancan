@@ -1,0 +1,12 @@
+{include file="html/header"}
+<div class="users">
+	<div class="comm-actions">
+		<a href="<?php echo module('cms')->getUrl('index/restadd'); ?>">添加餐厅</a>
+		<a href="<?php echo module('cms')->getUrl('index/restset'); ?>">指定今日餐厅</a>
+		<a href="<?php echo module('cms')->getUrl('index/menuadd'); ?>">添加菜单</a>
+		<a style="font-weight:normal;color:#f00;font-size:12px;">&nbsp; 点击餐厅名称编辑对应餐厅菜单 &nbsp;</a>
+	</div>
+	<?php print_r( module('admin')->getRests() );?>
+</div>
+
+{include file="html/footer"}

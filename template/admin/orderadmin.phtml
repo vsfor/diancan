@@ -1,0 +1,10 @@
+{include file="html/header"}
+<div class="users">
+	<div class="comm-actions">
+		<a href="<?php echo module('cms')->getUrl('index/ordersnow'); ?>">本次订单</a>
+		<a href="<?php echo module('cms')->getUrl('index/orderadmin'); ?>">全部订单</a>
+	</div>
+	<?php print_r( module('admin')->getOrders() );?>
+</div>
+
+{include file="html/footer"}

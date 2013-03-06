@@ -1,0 +1,32 @@
+2012-07-23 09:57:17 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select a.name as uname,b.id as mid,b.name as mname,b.hit as mhit,c.name as rname,b.price as price,d.ordertime as ordertime from `user` as a,`menu` as b,`restaurant` as c,`order` as d where d.ordertime > 1342994237 and d.u_id = a.id and d.m_id = b.id and b.r_id = c.id group by d.r_id order by d.id desc LIMIT 0,10<br>
+					<b>错误详情</b>: Unknown column 'd.r_id' in 'group statement'<br>
+					<b>错误代码</b>:1054<br>
+2012-07-23 10:20:45 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select sum(b.price) from order as a,menu as b where a.m_id = b.id and a.ordertime > 1342995645 and b.r_id = <br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order as a,menu as b where a.m_id = b.id and a.ordertime > 1342995645 and b.r_id' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-23 10:21:11 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select sum(b.price) from order as a,menu as b where a.m_id = b.id and a.ordertime > 1342995671 and b.r_id = 1<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order as a,menu as b where a.m_id = b.id and a.ordertime > 1342995671 and b.r_id' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-23 10:22:16 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select sum(b.price) from order as a,menu as b where `a`.`m_id` = `b`.`id` and `a`.`ordertime` > 1342995736 and `b`.`r_id` = 1<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order as a,menu as b where `a`.`m_id` = `b`.`id` and `a`.`ordertime` > 134299573' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-23 10:23:53 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select count() as totalnum,sum(b.price) as totalprice from `order` as a,`menu` as b where `a`.`m_id` = `b`.`id` and `a`.`ordertime` > 1342995833 and `b`.`r_id` = 1<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') as totalnum,sum(b.price) as totalprice from `order` as a,`menu` as b where `a`' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-23 14:23:16 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select id,u_id,price from order where `level` != 8 and `ordertime` > 1343010196<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order where `level` != 8 and `ordertime` > 1343010196' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-23 14:23:51 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select id,u_id,price from `order` where `level` != 8 and `ordertime` > 1343010231<br>
+					<b>错误详情</b>: Unknown column 'level' in 'where clause'<br>
+					<b>错误代码</b>:1054<br>
+2012-07-23 14:24:40 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: update form `order` set `status` = 8 where id = 33<br>
+					<b>错误详情</b>: Table 'diancan.form' doesn't exist<br>
+					<b>错误代码</b>:1146<br>

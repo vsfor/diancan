@@ -1,0 +1,4 @@
+2012-07-18 10:44:27 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: INSERT INTO order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (6,1,8.5,1342579467) <br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (6,1,8.5,1342579467)' at line 1<br>
+					<b>错误代码</b>:1064<br>

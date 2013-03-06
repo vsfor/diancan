@@ -1,0 +1,17 @@
+{include file="html/header"}
+<div class="comm-actions">
+	<a href="<?php echo module('cms')->getUrl('index/useradd'); ?>">添加新用户</a>
+	<a href="<?php echo module('cms')->getUrl('index/addmoney'); ?>">用户批量充值</a>
+</div> 
+<div class="add-money">
+<form action="<?php echo module('cms')->getUrl('admin/moneyadd'); ?>" method="post">
+	<?php echo module('admin')->getUserList(); ?> <br class="clearboth"/><hr /><br />
+	充值金额：<input type="text" name="addmoney" /> 
+	<input type="reset" value="重置" />
+	<input type="submit" value="提交" />
+</form>
+<a class="goback" href="<?php echo module('cms')->getUrl('index/useradmin'); ?>">返回用户管理</a>
+</div>
+
+
+{include file="html/footer"}

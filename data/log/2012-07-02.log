@@ -1,0 +1,1 @@
+2012-07-02 17:42:37 | 192.168.1.64 | /diancan/index.php |Missing argument 1 for diancanMod::getUserMoney(), called in F:\www82\diancan\CanPHP\core\cpTemplate.class.php(67) : eval()'d code on line 12 and defined

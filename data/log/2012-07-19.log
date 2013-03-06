@@ -1,0 +1,9 @@
+2012-07-19 11:38:32 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select count() from `order` where ordertime > 1342661912<br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') from `order` where ordertime > 1342661912' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-19 11:48:41 | 192.168.1.64 | /diancan/index.php |Invalid argument supplied for foreach()
+2012-07-19 14:05:29 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select count(*) as counts from `order` where `uid` = 1<br>
+					<b>错误详情</b>: Unknown column 'uid' in 'where clause'<br>
+					<b>错误代码</b>:1054<br>

@@ -1,0 +1,39 @@
+{include file="html/header"}
+<div class="comm-actions">
+	<a href="<?php echo module('cms')->getUrl('index/useradd'); ?>">添加新用户</a>
+	<a href="<?php echo module('cms')->getUrl('index/addmoney'); ?>">用户批量充值</a>
+</div> 
+<div class="add-user"><?php //print_r($temp_userinfo); ?>
+<form action="<?php echo module('cms')->getUrl('admin/_useredit'); ?>" method="post">
+	<input type="hidden" name="userid" value="<?php echo $temp_userinfo['id']; ?>" />
+	<div><label>用户名：</label><input type="text" name="username" value="<?php echo $temp_userinfo['name']; ?>" /></div>
+	<div><label>密码：</label><input type="password" name="password" value="<?php echo $temp_userinfo['password']; ?>" /></div>
+	<div><label>QQ：</label><input type="text" name="userqq" value="<?php echo $temp_userinfo['qq']; ?>"  />   </div>
+	<div><label>金额：</label><input type="text" name="usermoney" value="<?php echo $temp_userinfo['money']; ?>" />  </div>
+	<div><label>状态：</label><select type="text" name="userlock">  
+	<?php if($temp_userinfo['lock'] == 0): ?>
+		<option value="0" selected><span>正常</span></option>
+		<option value="1"><span>锁定</span></option>
+	<?php else: ?>
+		<option value="0"><span>正常</span></option>
+		<option value="1" selected><span>锁定</span></option>
+	<?php endif;?>
+	</select>  <br /> </div>
+	<div><label>角色：</label><select type="text" name="userlevel">
+	<?php if($temp_userinfo['level'] == 0): ?>
+		<option value="0" selected><span>普通用户</span></option>
+		<option value="9"><span>管理员</span></option>
+	<?php else: ?>
+		<option value="0"><span>普通用户</span></option>
+		<option value="9" selected><span>管理员</span></option>
+	<?php endif;?>
+	</select>   </div>
+	<div class="sub-action">
+	<input type="reset" value="重置" />
+	<input type="submit" value="提交" />
+	</div>
+</form>
+<a class="goback" href="<?php echo module('cms')->getUrl('index/useradmin'); ?>">返回用户管理</a>
+</div>
+
+{include file="html/footer"}

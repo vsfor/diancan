@@ -1,0 +1,15 @@
+{include file="html/header"}
+<div class="add-user">
+<div class="tip-msg">注册请填写真实信息，完成注册后，请及时联系管理员充值</div>
+<form action="<?php echo module('cms')->getUrl('user/useradd'); ?>" method="post">
+	<div><label>用户名：</label><input type="text" name="username" />  </div>
+	<div><label>密码：</label><input type="password" name="password" />   </div>
+	<div><label>QQ：</label><input type="text" name="userqq" />   </div> 
+	<div class="sub-action">
+	<input type="reset" value="重置" />
+	<input type="submit" value="注册" />
+	<a href="<?php echo module('cms')->getUrl();?>">返回</a>
+	</div>
+</form>
+</div>
+{include file="html/footer"}

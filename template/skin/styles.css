@@ -1,0 +1,82 @@
+/* ------ --------- */
+* { padding:0; margin:0; }
+img { border:0; }
+a  { text-decoration:none; color:#770;}
+a:hover { color:#000; }
+body { color:#333;padding:20px;}
+ul li { list-style:none;}
+.clearboth { display:block;clear:both;}
+.top-links { margin:5px 10px; padding:8px 20px;border:1px solid #ddd;border-radius:5px;}
+.copyright { position:fixed;display:block;padding:5px 10px; bottom:0;left:0;width:100%;text-align:center;background:#000; color:#777700;margin:0 auto;}
+.main-content { min-height:700px;}
+
+.welcome {   background:#000000; font-weight:bold; border-bottom: 2px dashed #777700; color: #FFFFFF; padding: 10px;}
+.self-info  { background:#444; color:#fff;padding:3px;}
+.now-money  { font-weight:bold; color:#cc0;}
+.tip-msg { color:#c00;}
+.link-checkout { font-weight:bold;}
+
+.login-form { width:400px; margin:30px auto;height:160px;border:5px solid #ddd;border-radius:8px;box-shadow: 0 0 20px;}
+.login-form  .title { font-weight:bold;font-size:28px;font-family:kaiti,serif;text-align:center;padding:15px 5px;}
+.login-form div { clear:both;display:block;padding:5px;}
+.login-form label { width:150px;text-align:right;display:block;float:left;}
+.login-form .actions { padding-left:75px;}
+.login-form .actions span {width:65px;display:block;float:left;text-align:center;}
+.login-form .actions span.button input { width:60px;}
+
+.menus .info-name { width:130px;}
+.menus .info-price { width:80px;}
+.menus .info-hits { width:80px;} 
+
+.users { display:block;padding:5px 20px;margin:5px 20px;}
+.comm-actions { padding:5px 10px; font-weight:bold; border-bottom:2px solid #ddd;}
+
+.user-info { display:block; clear:both;}
+.user-info li { border-bottom:1px solid #ddd; clear:both;padding:3px 0;height:22px;}
+.user-info li.evn { background:#f0f0f0;}
+.user-info li.title span { font-weight:bold;}
+.user-info span { display:block; float:left;text-align:center;padding:0 5px;}
+.user-info .info-name { width:160px;}
+.user-info .info-qq { width:100px;}
+.user-info .info-money { width:100px;}
+.user-info .info-lock { width:60px;}
+.user-info .info-action { width:140px;}
+
+.page-toolbar { padding:3px 10px;border:1px solid #ddd;margin:5px;font-weight:bold;}
+.page-toolbar a { font-weight:normal;}
+
+.add-user { padding:5px 20px;}
+.add-user form div { display:block;clear:both;padding:5px;}
+.add-user form label { width:90px;text-align:right;display:block;float:left;}
+.add-user form div.sub-action { padding-left:50px;}
+
+.add-money { padding:5px 20px;}
+ul.add-money  { clear:both; display:block;}
+ul.add-money li.user-item { float:left; padding:5px 20px; }
+a.goback { padding:5px;display:block;margin:20px;float:left;clear:both;}
+
+
+.rest-info { display:block; clear:both;}
+.rest-info li { border-bottom:1px solid #ddd; clear:both;padding:3px 0;height:22px;}
+.rest-info li.evn { background:#f0f0f0;}
+.rest-info li.title span { font-weight:bold;}
+.rest-info span { display:block; float:left;text-align:center;padding:0 5px;min-height:16px;min-width:40px;}
+.rest-info .info-name { width:160px;}
+.rest-info .info-phone { width:100px;}
+.rest-info .info-addr { width:160px;}
+.rest-info .info-lock { width:60px;}
+.rest-info .info-action { width:140px;}
+
+.now-rests { padding:5px 20px;margin:5px 20px;display:block;border:1px solid #ccc;border-radius:10px;}
+.now-rests  span.title { float:left;display:block;padding:2px 5px;}
+.now-rests ul li { float:left;display:block; padding:2px 5px;}
+
+.info-price  { width:100px;}
+.info-uname { width:100px;}
+.info-rname { width:160px;}
+.info-hits { width:70px;}
+
+.rest-info div label { float:left;}
+
+.page-nowmenu  li.now-item  { float:left; display:block; padding:3px 5px;margin:2px;}
+.now-rest { font-weight:bold; color:#900;}

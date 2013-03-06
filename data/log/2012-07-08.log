@@ -1,0 +1,7 @@
+2012-07-08 11:24:17 | 192.168.1.64 | /diancan/index.php |menuadmin操作方法在index模块中不存在
+2012-07-08 11:32:45 | 192.168.1.64 | /diancan/index.php |Invalid argument supplied for foreach()
+2012-07-08 13:51:21 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: INSERT INTO restaurant  (`name`,`phone`,`addr`,`money`,`lock`) VALUES ('餐厅3',3333,'地址3','','') <br>
+					<b>错误详情</b>: Unknown column 'money' in 'field list'<br>
+					<b>错误代码</b>:1054<br>
+2012-07-08 13:51:44 | 192.168.1.64 | /diancan/index.php |orderadmin操作方法在index模块中不存在

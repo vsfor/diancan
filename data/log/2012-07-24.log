@@ -1,0 +1,27 @@
+2012-07-24 09:42:08 | 192.168.1.64 | /diancan/index.php |模块或插件不存在 index
+2012-07-24 09:42:14 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select name,password,qq,money,lock,level from `user` where id = 14 <br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lock,level from `user` where id = 14' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-24 09:43:08 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select name,password,qq,money,lock,level from `user` where `id` = 14 <br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lock,level from `user` where `id` = 14' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-24 09:43:08 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select name,password,qq,money,lock,level from `user` where `id` = 14 <br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'lock,level from `user` where `id` = 14' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-24 11:03:28 | 192.168.1.64 | /diancan/index.php |userdel操作方法在admin模块中不存在
+2012-07-24 11:10:19 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: DELETE FROM order  WHERE  `u_id` = 4 <br>
+					<b>错误详情</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order  WHERE  `u_id` = 4' at line 1<br>
+					<b>错误代码</b>:1064<br>
+2012-07-24 14:04:40 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select count(*) as counts from `order`<br>
+					<b>错误详情</b>: Table 'diancan.order' doesn't exist<br>
+					<b>错误代码</b>:1146<br>
+2012-07-24 15:13:45 | 192.168.1.64 | /diancan/index.php |Invalid argument supplied for foreach()
+2012-07-24 15:25:10 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: update form menu set hit = hit + 1<br>
+					<b>错误详情</b>: Table 'diancan.form' doesn't exist<br>
+					<b>错误代码</b>:1146<br>

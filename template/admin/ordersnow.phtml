@@ -1,0 +1,22 @@
+{include file="html/header"}
+<div class="users">
+	<div class="comm-actions">
+		<a href="<?php echo module('cms')->getUrl('index/ordersnow'); ?>">本次订单</a>
+		<a href="<?php echo module('cms')->getUrl('index/orderadmin'); ?>">全部订单</a>
+	</div>
+	<?php print_r( module('admin')->getOrdersNow() );?>
+</div>
+<div class="order-infos">
+	<div class="">
+		<span>本次点餐信息统计</span>
+		<div>
+			<?php print_r(module('admin')->getOrdersNowInfo()); ?>
+		</div>
+	</div>
+	<div class="">
+		<a class="link-checkout" href="<?php echo module('cms')->getUrl('index/checkout'); ?>">已完成点餐，点击结账</a>
+		<span class="tip-msg" style="font-size:12px;">完成点餐后请注意点击结账扣款</span>
+	</div>
+</div>
+<?php //print_r($_SESSION);?>
+{include file="html/footer"}

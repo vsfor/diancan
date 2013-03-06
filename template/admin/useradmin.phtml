@@ -1,0 +1,11 @@
+{include file="html/header"}
+<div class="users">
+	<div class="comm-actions">
+		<a href="<?php echo module('cms')->getUrl('index/useradd'); ?>">添加新用户</a>
+		<a href="<?php echo module('cms')->getUrl('index/addmoney'); ?>">用户批量充值</a>
+	</div>
+	<?php print_r( module('admin')->getUsers() );?>
+</div>
+
+
+{include file="html/footer"}

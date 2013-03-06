@@ -1,0 +1,6 @@
+2012-07-25 09:34:13 | 192.168.1.64 | /diancan/index.php |print_r() expects at least 1 parameter, 0 given
+2012-07-25 10:11:13 | 192.168.1.64 | /diancan/index.php |./template/diancan/editinfo.phtml模板文件不存在
+2012-07-25 10:12:36 | 192.168.1.64 | /diancan/index.php |editinfo操作方法在index模块中不存在
+2012-07-25 14:32:56 | 192.168.1.64 | /diancan/index.php |useradmin操作方法在admin模块中不存在
+2012-07-25 14:33:04 | 192.168.1.64 | /diancan/index.php |menuadmin操作方法在admin模块中不存在
+2012-07-25 15:34:49 | 192.168.1.64 | /diancan/index.php |Invalid argument supplied for foreach()

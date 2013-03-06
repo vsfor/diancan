@@ -1,0 +1,29 @@
+2012-07-13 10:27:22 | 192.168.1.64 | /diancan/index.php |mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] 由于目标机器积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306)
+2012-07-13 11:02:51 | 192.168.1.64 | /diancan/index.php |useradmin鎿嶄綔鏂规硶鍦╝dmin妯″潡涓笉瀛樺湪
+2012-07-13 11:03:10 | 192.168.1.64 | /diancan/index.php |妯″潡鎴栨彃浠朵笉瀛樺湪 index
+2012-07-13 11:03:14 | 192.168.1.64 | /diancan/index.php |useradmin鎿嶄綔鏂规硶鍦╝dmin妯″潡涓笉瀛樺湪
+2012-07-13 15:42:14 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: select price form menu where `id`=2<br>
+					<b>閿欒璇︽儏</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'menu where `id`=2' at line 1<br>
+					<b>閿欒浠ｇ爜</b>:1064<br>
+2012-07-13 15:46:39 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: INSERT INTO order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (2,1,9.5,1342165599) <br>
+					<b>閿欒璇︽儏</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (2,1,9.5,1342165599)' at line 1<br>
+					<b>閿欒浠ｇ爜</b>:1064<br>
+2012-07-13 15:48:15 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: INSERT INTO order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (6,1,8.5,1342165695) <br>
+					<b>閿欒璇︽儏</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (6,1,8.5,1342165695)' at line 1<br>
+					<b>閿欒浠ｇ爜</b>:1064<br>
+2012-07-13 15:48:33 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: INSERT INTO order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (6,1,8.5,1342165713) <br>
+					<b>閿欒璇︽儏</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (6,1,8.5,1342165713)' at line 1<br>
+					<b>閿欒浠ｇ爜</b>:1064<br>
+2012-07-13 15:48:39 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: INSERT INTO order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (2,1,9.5,1342165719) <br>
+					<b>閿欒璇︽儏</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (2,1,9.5,1342165719)' at line 1<br>
+					<b>閿欒浠ｇ爜</b>:1064<br>
+2012-07-13 15:50:54 | 192.168.1.64 | /diancan/index.php | MySQL Query Error<br>
+					<b>SQL</b>: INSERT INTO order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (2,1,9.5,1342165854) <br>
+					<b>閿欒璇︽儏</b>: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order  (`m_id`,`u_id`,`price`,`ordertime`) VALUES (2,1,9.5,1342165854)' at line 1<br>
+					<b>閿欒浠ｇ爜</b>:1064<br>
